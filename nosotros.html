@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Odontología Elizabeth Baquero</title>
-    <link rel="shortcut icon" href="imagenes/favicon.png" type="image/x-icon">
+    <link rel="shortcut icon" href="imagenes/favicon.png" type="image/x-icon" />
     <link rel="stylesheet" href="css/styles.css" />
     <link
       rel="stylesheet"
@@ -121,6 +121,20 @@
     /></noscript>
     <!-- End Meta Pixel Code -->
     <!-- Codigo de adds whatsapp   -->
+    <!-- Google Tag Manager -->
+    <script>
+      (function (w, d, s, l, i) {
+        w[l] = w[l] || [];
+        w[l].push({ "gtm.start": new Date().getTime(), event: "gtm.js" });
+        var f = d.getElementsByTagName(s)[0],
+          j = d.createElement(s),
+          dl = l != "dataLayer" ? "&l=" + l : "";
+        j.async = true;
+        j.src = "https://www.googletagmanager.com/gtm.js?id=" + i + dl;
+        f.parentNode.insertBefore(j, f);
+      })(window, document, "script", "dataLayer", "GTM-THLNK4QG");
+    </script>
+    <!-- End Google Tag Manager -->
     <script>
       function gtag_report_conversion(url) {
         var callback = function () {
@@ -150,6 +164,23 @@
     <!-- Fin de Codigo de adds telefono   -->
   </head>
   <body>
+    <!-- Google Tag Manager (noscript) -->
+    <noscript
+      ><iframe
+        src="https://www.googletagmanager.com/ns.html?id=GTM-THLNK4QG"
+        height="0"
+        width="0"
+        style="display: none; visibility: hidden"
+      ></iframe
+    ></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+    <noscript
+      ><img
+        height="1"
+        width="1"
+        style="display: none"
+        src="https://www.facebook.com/tr?id=489645959612968&ev=PageView&noscript=1"
+    /></noscript>
     <header>
       <div class="item_header">
         <p><a href="tel:6012731655" target="_blank">Agenda tu cita</a></p>
@@ -181,7 +212,9 @@
               >Urgencias
             </a>
           </li>
-          <li><a href="index.html#servicios" class="menu_links">Tratamientos</a></li>
+          <li>
+            <a href="index.html#servicios" class="menu_links">Tratamientos</a>
+          </li>
           <li><a href="turismo.html" class="menu_links">Turismo</a></li>
           <li><a href="#ubicacion" class="menu_links">Ubicación</a></li>
           <li><a href="#contactodos" class="menu_links">Contacto</a></li>
@@ -616,7 +649,7 @@
         <img src="imagenes/contacto.png" alt="" />
         <form action="email.php" method="POST">
           <label for="Name">Hola! mi nombre es:</label>
-          <input type="text" id="Name" name="Name" required/> <br />
+          <input type="text" id="Name" name="Name" required /> <br />
           <label for="tratamiento">Estoy interesado(a) en</label>
           <select name="Tratamiento" id="Tratamiento" required>
             <option value="">Elije tu tratamiento</option>
@@ -632,9 +665,9 @@
           </select>
           <br />
           <label for="telefono">Mi celular</label>
-          <input type="tel" id="phone" name="phone" required/><br />
+          <input type="tel" id="phone" name="phone" required /><br />
           <label for="correo">Mi correo</label>
-          <input type="email" id="correo" name="correo" required/>
+          <input type="email" id="correo" name="correo" required />
 
           <button type="submit">Enviar</button>
         </form>
@@ -841,7 +874,7 @@
         },
       });
     </script>
-        <?php
+    <?php
         include("email.php");
         ?>
   </body>
